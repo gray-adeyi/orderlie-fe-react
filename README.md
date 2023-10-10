@@ -7,8 +7,8 @@ This is the frontend repository for Orderlie, an attendance or report arrangemen
 To get started with the project, follow these steps:
 
 1. Clone this repository to your local machine.
-2. Install the dependencies by running `npm install`.
-3. Start the development server by running `npm start`.
+2. Install the dependencies by running `yarn`.
+3. Start the development server by running `yarn dev`.
 
 ## Contributing
 
