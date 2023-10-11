@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors:{
         bgColor: '#0A39E0',
+        bgColorLight: 'rgba(10, 57, 224, 0.80)',
         logo: '#DDE1FC'
       },
       font:{
