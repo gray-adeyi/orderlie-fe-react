@@ -16,7 +16,7 @@ We welcome contributions from everyone. Before contributing, please read our [co
 
 ## Design
 
-The design for this project can be found on Figma [here](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=0%3A1&mode=design&t=n2nOOpkGUMmwDBCi-1).
+## UI Design for the Orderlie landing page (Desktop Version) [Figma Link](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=137-23&mode=design&t=Uw14QQYPDUrTp9MP-4)
 
 ## License
 
