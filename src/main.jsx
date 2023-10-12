@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { BrowserRouter as Router} from "react-router-dom";
 import App from './App.jsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './index.css'
@@ -20,6 +21,9 @@ const router = createBrowserRouter([
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Router>
+      <App />
+    </Router>
+
   </React.StrictMode>,
 )
