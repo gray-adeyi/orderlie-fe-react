@@ -75,6 +75,9 @@ const Header = () => {
 									Pricing
 								</li>
 							</ul>
+							<button className='px-4 py-2 font-bold text-2xl text-white bg-bgColor rounded-md cursor-pointer hover:scale-110'>
+								Log In
+							</button>
 						</motion.div>
 					)}
 				</div>
