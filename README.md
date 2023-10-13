@@ -20,6 +20,8 @@ We welcome contributions from everyone. Before contributing, please read our [co
 
 ## UI Design for the Orderlie New class (Desktop Version) [Figma Link](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=24-15&mode=design&t=Uw14QQYPDUrTp9MP-4)
 
+## UI Design for Edit User Info (Desktop Version) [Figma Link](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=39-20&mode=design&t=tq72eL8pIMNWrPk4-4)
+
 ## License
 ****
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
