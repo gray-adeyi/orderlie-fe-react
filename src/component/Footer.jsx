@@ -4,7 +4,7 @@ import {NavLink, Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-bgColor w-screen h-auto fixed bottom-0">
+    <footer className="bg-bgColor w-screen h-auto ">
       <div className="flex flex-wrap justify-between py-8 border-b border-white px-6 sm:px-24">
         <div className="flex flex-col mb-5 sm:mb-0">
           <div>
