@@ -1,5 +1,6 @@
 import React from 'react';
 import img from '../../assets/hom-img.png';
+import Overview from './Overview';
 
 const Homepage = () => {
 	return (
@@ -26,6 +27,7 @@ const Homepage = () => {
 						/>
 					</div>
 				</div>
+				<Overview />
 			</div>
 		</div>
 	);
