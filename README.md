@@ -22,6 +22,10 @@ We welcome contributions from everyone. Before contributing, please read our [co
 
 ## UI Design for the Orderlie class list (Desktop Version) [Figma Link](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=50-19&mode=design&t=7VED44rQgBdBhACP-4)
 
+## UI Design for Edit User Info (Desktop Version) [Figma Link](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=39-20&mode=design&t=tq72eL8pIMNWrPk4-4)
+
+## UI Design for Edit User Info (Mobile Version) [Figma Link](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=163-160&mode=design&t=7VED44rQgBdBhACP-4)
+
 ## License
 ****
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
