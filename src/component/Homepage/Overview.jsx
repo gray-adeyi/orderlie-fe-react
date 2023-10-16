@@ -10,7 +10,7 @@ const Overview = () => {
 		AOS.init();
 	}, []);
 	return (
-		<div className=' py-40'>
+		<div className=' py-20 md:py-40'>
 			<div>
 				<h2 className='text-2xl font-bold'>Hello Class Governor</h2>
 				<p className='text-xl font-light'>

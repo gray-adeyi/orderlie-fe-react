@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './component/Header';
 import Footer from './component/footer';
 import { Outlet } from 'react-router-dom';
-import Homepage from './component/Homepage/Homepage';
+import Homepage from './pages/Home/Homepage';
 
 function App() {
 	return (
@@ -11,11 +11,10 @@ function App() {
 			<div className='w-screen h-auto flex flex-auto '>
 				<Header />
 			</div>
-			<Homepage />
-			{/* <Outlet /> */}
-			<div>
-				<Footer />
-			</div>
+			{/* <Homepage /> */}
+			<Outlet />
+
+			<Footer />
 		</>
 	);
 }
