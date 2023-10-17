@@ -7,7 +7,7 @@ import { NavLink, Link, useLocation } from 'react-router-dom';
 export default function Footer() {
 	const location = useLocation();
 	return (
-		<footer className='bg-bgColor w-full h-auto '>
+		<footer className='bg-bgColor w-full h-auto font-landingPage'>
 			{location.pathname === '/' ? (
 				<div className='flex flex-wrap justify-between py-8 border-b border-white px-6 sm:px-24'>
 					<div className='flex flex-col mb-5 sm:mb-0'>
@@ -23,7 +23,7 @@ export default function Footer() {
 						</div>
 
 						<div className='mt-5'>
-							<h1 className='text-white text-2xl mt-3'>Company</h1>
+							<h1 className='text-white text-2xl mt-3 font-bold'>Company</h1>
 							<ul className='space-y-2 mt-3'>
 								<li>
 									<NavLink
@@ -46,7 +46,7 @@ export default function Footer() {
 					<div className='flex flex-col mb-5 sm:mb-0 sm:flex-row'>
 						<div className='mb-4 sm:mr-8'>
 							<div>
-								<h1 className='text-white text-2xl'>Resources</h1>
+								<h1 className='text-white text-2xl font-bold'>Resources</h1>
 								<ul className='space-y-2 mt-3'>
 									<li>
 										<NavLink
@@ -67,7 +67,7 @@ export default function Footer() {
 						</div>
 						<div className='sm:mt-0'>
 							<div className=''>
-								<h1 className='text-white text-2xl'>Legal</h1>
+								<h1 className='text-white text-2xl font-bold'>Legal</h1>
 								<ul className='space-y-2 mt-3'>
 									<li>
 										<NavLink
@@ -103,7 +103,7 @@ export default function Footer() {
 					</div>
 
 					<div className='flex flex-col mb-5 sm:mb-0 sm:items-center'>
-						<h1 className='text-white text-2xl'>Support</h1>
+						<h1 className='text-white text-2xl font-bold'>Support</h1>
 						<h3 className='text-white mt-3'>oscaadoekiti@gmail.com</h3>
 						<div className='flex mt-4'>
 							<NavLink

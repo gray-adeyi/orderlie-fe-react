@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,4 +15,8 @@ body {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 	/* color: #9cb0f8be */
+}
+
+body::-webkit-scrollbar {
+	display: none;
 }
