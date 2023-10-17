@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './index.css';
 import LandingPage from './pages/Home/landingPage.jsx';
 import Homepage from './pages/Home/Homepage.jsx';
+import EditProfilePage from './pages/Home/editProfile.jsx';
 
 const router = createBrowserRouter([
 	{
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
 				path: '/user',
 				element: <Homepage />,
 			},
+			{
+				path:'/edit-profile',
+				element: <EditProfilePage/>
+			}
 		],
 	},
 ]);

@@ -9,7 +9,7 @@ import Arrow from '../../assets/Arrow 1.svg'
 
 const LandingPage = () => {
     return (
-        <div className='w-screen h-auto items-center font-landingPage'>
+        <div className='w-screen h-auto items-center font-serrat'>
             <div className='flex flex-col gap-y-5 mb-5'>
                 <div className='bg-bgColor flex pt-5 px-4 md:items-center md:justify-between md:px-5 md:py-0 h-45 md:h-60'>
                     <div className='flex flex-col gap-y-3 md:gap-y-4 text-white w-3/4 md:max-w-max'>

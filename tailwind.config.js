@@ -11,8 +11,9 @@ module.exports = {
 				sponsors: 'rgba(108, 117, 125, 1)'
 			},
 			fontFamily: {
-				landingPage: ['Montserrat'],
-				roboto: ['Roboto']
+				serrat: ['Montserrat'],
+				roboto: ['Roboto'],
+				jakarta: ['Plus Jakarta Sans']
 			},
 			fontWeight: {
 				thin: '100',

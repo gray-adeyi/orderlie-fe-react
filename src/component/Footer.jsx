@@ -7,7 +7,7 @@ import { NavLink, Link, useLocation } from 'react-router-dom';
 export default function Footer() {
 	const location = useLocation();
 	return (
-		<footer className='bg-bgColor w-full h-auto font-landingPage'>
+		<footer className='bg-bgColor w-full h-auto font-serrat'>
 			{location.pathname === '/' ? (
 				<div className='flex flex-wrap justify-between py-8 border-b border-white px-6 sm:px-24'>
 					<div className='flex flex-col mb-5 sm:mb-0'>

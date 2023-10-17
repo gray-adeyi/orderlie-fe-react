@@ -13,7 +13,7 @@ const Homepage = () => {
 		gap: 'gap-3',
 	};
 	return (
-		<div className='w-screen h-auto items-center px-4  md:px-20 '>
+		<div className='w-screen h-auto items-center px-4  md:px-20  font-serrat'>
 			<div className='md:px-5 px-2 py-10 '>
 				<div
 					className='grid grid-cols-1 md:grid-cols-2'
@@ -21,7 +21,7 @@ const Homepage = () => {
 					<div className=' flex flex-col gap-5'>
 						<div>
 							<h3
-								className={`text-3xl md:text-5xl font-bold spacing-4 md:leading-12 text-gray-600 ${style.gap} `}>
+								className={`text-3xl md:text-5xl font-extrabold spacing-4 md:leading-12 text-gray-600 ${style.gap} font-jakarta`}>
 								Simplify attendance tracking with{' '}
 								<span className=' text-bgColor pl-0 md:pr-40'>Orderlie</span>
 							</h3>
