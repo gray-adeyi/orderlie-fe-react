@@ -26,6 +26,8 @@ We welcome contributions from everyone. Before contributing, please read our [co
 
 ## UI Design for Edit User Info (Mobile Version) [Figma Link](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=163-160&mode=design&t=7VED44rQgBdBhACP-4)
 
+## UI Design for Class List Page (Mobile Version) [Figma Link](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=171-23&mode=design&t=6viTFj522UpmlSUX-4)
+
 ## UI Design for Update biodata (desktop Version) [Figma Link](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=51-82&mode=design&t=7VED44rQgBdBhACP-4)
 
 ## License
