@@ -32,7 +32,7 @@ We welcome contributions from everyone. Before contributing, please read our [co
 
 ## UI Design for New Class Page (Mobile Version) [Figma Link](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=163-202&mode=design&t=hcfykl2ziDsxBrPT-4)
 
-## UI Design for Upload Bio-Data (Mobile Version) [Figma Link](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=164-287&mode=design&t=hcfykl2ziDsxBrPT-4)
+## UI Design for landing page (Mobile Version) [Figma Link](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=151-23&mode=design&t=tksM67seUg2hg6K0-4)
 ## License
 ****
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
