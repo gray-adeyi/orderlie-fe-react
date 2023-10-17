@@ -1,24 +1,22 @@
+import React from 'react';
 
-import React from "react";
-import "./App.css";
-
-import Header from "./component/Header";
-import Footer from "./component/footer";
-import { Outlet } from "react-router-dom";
+import Header from './component/Header';
+import Footer from './component/footer';
+import { Outlet } from 'react-router-dom';
+import Homepage from './pages/Home/Homepage';
 
 function App() {
-  return (
-    <>
-      <div className="w-screen h-auto flex flex-auto ">
-        <Header />
-      </div>
-      <Outlet />
-      <div>
-        <Footer />
-      </div>
-    </>
-  );
+	return (
+		<>
+			<div className='w-screen h-auto flex flex-auto '>
+				<Header />
+			</div>
+			{/* <Homepage /> */}
+			<Outlet />
 
+			<Footer />
+		</>
+	);
 }
 
 export default App;
