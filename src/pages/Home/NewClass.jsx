@@ -49,7 +49,7 @@ const NewClass = () => {
   };
 
   return (
-    <div className="container mx-auto my-10">
+    <div className="container mx-auto my-10 font-serrat">
       {/* Section 1 */}
       <div className="flex justify-center space-x-2 px-3">
       <button className=" rounded-xl border border-sm py-2 px-3 text-bgColor border-bgColor sm:py-2 md:px-5 lg:px-10">
