@@ -1,6 +1,5 @@
 import WhatWeOffer from '../../component/offer/WhatWeOffer'
 import './landingPage.css'
-import Footer from '../../component/Footer'
 import frameImg from '../../assets/Frame 6.png'
 import sponsorOne from '../../assets/Oculus.png'
 import sponsorTwo from '../../assets/Aven.png'
@@ -55,7 +54,6 @@ const LandingPage = () => {
                     </div>
                 </div>
             </section>
-			<Footer />
         </div>
     )
 }

@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from './component/Header';
 import { Outlet } from 'react-router-dom';
+import Footer from './component/Footer';
 import Homepage from './pages/Home/Homepage';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 			</div>
 			{/* <Homepage /> */}
 			<Outlet />
+			<Footer />
 		</>
 	);
 }

@@ -1,0 +1,19 @@
+.inp-cont {
+    @apply flex flex-col gap-y-1.5;
+}
+
+.label {
+    @apply font-semibold text-sm md:text-2xl ml-2.5 md:ml-3;
+}
+
+.input {
+	@apply outline-none md:text-2xl border-0.4 border-bgColorLight rounded-lg md:rounded-xl shadow-md py-1.5 md:py-2.5 pl-3 md:pl-3;
+}
+
+.input::placeholder {
+    @apply text-black;
+}
+
+.update-info {
+    @apply cursor-pointer hover:shadow-md transition ease-out duration-500 outline-none w-full bg-bgColor rounded-md md:rounded-xl p-1 md:p-3 text-sm md:text-2xl font-semibold text-white;
+}

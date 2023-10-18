@@ -42,8 +42,11 @@ module.exports = {
 				73: '73px',
 				45: '45vh',
 				60: '60vh',
+				90: '90vh',
 				304: '304px',
-				83: '83px'
+				83: '83px',
+				43: '43px',
+				80: '80px'
 			},
 			lineHeight: {
 				'extra-loose': '2.5',
@@ -57,6 +60,10 @@ module.exports = {
 
 			borderRadius: {
 				35: '35px'
+			},
+
+			borderWidth: {
+				0.4: '0.42px'
 			}
 		},
 	},
