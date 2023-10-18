@@ -26,6 +26,21 @@
     transition: 0.3s;
 }
 
+.frame {
+    display: block;
+    height: 336px;
+    max-width: 353px;
+}
+
+.get-started {
+    @apply cursor-pointer outline-none flex items-center gap-x-1 md:gap-x-2.5 md:w-304 md:h-83 bg-white p-2  rounded-35 w-max text-base md:justify-center md:text-2xl hover:shadow-md transition ease-out duration-500;
+}
+
+.sponsor-img {
+    height: 50.18px;
+    width: 228.25px;
+}
+
 @media not all and (min-width: 768px) {
     .ready-for-dev {
         width: 90%;
@@ -37,6 +52,13 @@
         font-size: 16px;
     }
     .ready-for-dev button{
-        padding: 15px 100px;
+        padding: 15px 99px;
+    }
+    .frame {
+        display: none;
+    }
+    .sponsor-img {
+        height: 18.2px;
+        width: 71.4px;
     }
 }

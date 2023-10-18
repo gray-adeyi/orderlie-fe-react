@@ -8,9 +8,12 @@ module.exports = {
 				bgColorLight: 'rgba(10, 57, 224, 0.80)',
 				logo: '#DDE1FC',
 				hover: '#beccffbe',
+				sponsors: 'rgba(108, 117, 125, 1)'
 			},
-			font: {
-				logoStyle: 'Montserrat',
+			fontFamily: {
+				serrat: ['Montserrat'],
+				roboto: ['Roboto'],
+				jakarta: ['Plus Jakarta Sans']
 			},
 			fontWeight: {
 				thin: '100',
@@ -36,12 +39,25 @@ module.exports = {
 				4: '24px',
 				5: '32px',
 				6: '48px',
+				73: '73px',
+				45: '45vh',
+				60: '60vh',
+				304: '304px',
+				83: '83px'
 			},
 			lineHeight: {
 				'extra-loose': '2.5',
 				12: '4rem',
 				fit: '8',
 			},
+
+			fontSize: {
+				40: ['40px', {lineHeight: '3.5rem'}]
+			},
+
+			borderRadius: {
+				35: '35px'
+			}
 		},
 	},
 	plugins: [],
