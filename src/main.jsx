@@ -6,6 +6,7 @@ import './index.css';
 import Home from './pages/Home/Home.jsx';
 import Homepage from './pages/Home/Homepage.jsx';
 import NewClass from './pages/Home/NewClass.jsx';
+import ClassList from './pages/Home/ClassList.jsx';
 const router = createBrowserRouter([
 	{
 		path: '/',
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
 			{
 				path: '/newclass',
 				element: <NewClass />,
+			},
+			{
+				path: '/classlist',
+				element: <ClassList />,
 			},
 		],
 	},
