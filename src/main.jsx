@@ -28,14 +28,17 @@ const router = createBrowserRouter([
 				element: <NewClass />,
 			},
 			{
-
 				path: '/classlist',
 				element: <ClassList />,
 			},
-
+			{
 				path: '/edit-profile',
-				element: <EditProfilePage />
-			}
+				element: <EditProfilePage />,
+			},
+			{
+				path: '/upload-bio-data',
+				element: <UploadBioData />,
+			},
 		],
 	},
 ]);
