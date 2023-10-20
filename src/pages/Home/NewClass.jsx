@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 const NewClass = () => {
 	const [formData, setFormData] = useState({
@@ -53,19 +52,15 @@ const NewClass = () => {
 		<div className='container mx-auto my-10 font-serrat'>
 			{/* Section 1 */}
 			<div className='flex justify-center space-x-2 px-3'>
-				<Link to='/upload-bio-data'>
-					<button className=' rounded-xl border border-sm py-2 px-3 text-bgColor border-bgColor sm:py-2 md:px-5 lg:px-10'>
-						Upload Bio-Data
-					</button>
-				</Link>
+				<button className=' rounded-xl border border-sm py-2 px-3 text-bgColor border-bgColor sm:py-2 md:px-5 lg:px-10'>
+					Upload Bio-Data
+				</button>
 				<button className='flex rounded-xl border border-sm py-2 px-3  text-bgColor border-bgColor  md:px-5 lg:px-10'>
 					Class List
 				</button>
-				<Link to='/newclass'>
-					<button className='flex rounded-xl py-2 px-3 sm:px-5 md:px-10 text-white bg-bgColor'>
-						Create New List
-					</button>
-				</Link>
+				<button className='flex rounded-xl py-2 px-3 sm:px-5 md:px-10 text-white bg-bgColor'>
+					Create New List
+				</button>
 			</div>
 
 			{/* Section 2 */}
