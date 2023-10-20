@@ -53,17 +53,21 @@ const NewClass = () => {
 		<div className='container mx-auto my-10 font-serrat'>
 			{/* Section 1 */}
 			<div className='flex justify-center space-x-2 px-3'>
-				<button className='flex rounded-xl border text-center border-sm py-1 px-1 text-bgColor border-bgColor sm:py-2 md:px-5 lg:px-10'>
-					Upload Bio-Data
-				</button>
+				<Link to='/upload-bio-data'>
+					<button className='flex rounded-xl border text-center border-sm py-1 px-1 text-bgColor border-bgColor sm:py-2 md:px-5 lg:px-10'>
+						Upload Bio-Data
+					</button>
+				</Link>
 				<Link
 					to='/classlist'
 					className='flex rounded-xl text-center border border-sm py-1 px-1  text-bgColor border-bgColor  md:px-5 lg:px-10'>
 					Class List
 				</Link>
-				<button className='flex rounded-xl py-1 px-1 sm:px-5 md:px-10 text-white bg-bgColor'>
-					Create New Class
-				</button>
+				<Link to='/newclass'>
+					<button className='flex rounded-xl py-1 px-1 sm:px-5 md:px-10 text-white bg-bgColor'>
+						Create New Class
+					</button>
+				</Link>
 			</div>
 
 			{/* Section 2 */}
