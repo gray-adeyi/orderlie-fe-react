@@ -8,6 +8,7 @@ import Homepage from './pages/Home/Homepage.jsx';
 import NewClass from './pages/Home/NewClass.jsx';
 import ClassList from './pages/Home/ClassList.jsx';
 import EditProfilePage from './pages/Home/editProfile.jsx';
+import UploadBioData from './pages/Home/UploadBioData.jsx';
 
 const router = createBrowserRouter([
 	{
@@ -27,15 +28,17 @@ const router = createBrowserRouter([
 				element: <NewClass />,
 			},
 			{
-
 				path: '/classlist',
 				element: <ClassList />,
 			},
-
+			{
 				path: '/edit-profile',
-				element: <EditProfilePage />
-			}
-
+				element: <EditProfilePage />,
+			},
+			{
+				path: '/upload-bio-data',
+				element: <UploadBioData />,
+			},
 		],
 	},
 ]);
