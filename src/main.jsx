@@ -7,6 +7,7 @@ import LandingPage from './pages/Home/landingPage.jsx';
 import Homepage from './pages/Home/Homepage.jsx';
 import NewClass from './pages/Home/NewClass.jsx';
 import EditProfilePage from './pages/Home/editProfile.jsx';
+import UploadBioData from './pages/Home/UploadBioData.jsx';
 
 const router = createBrowserRouter([
 	{
@@ -27,8 +28,12 @@ const router = createBrowserRouter([
 			},
 			{
 				path: '/edit-profile',
-				element: <EditProfilePage />
-			}
+				element: <EditProfilePage />,
+			},
+			{
+				path: '/upload-bio-data',
+				element: <UploadBioData />,
+			},
 		],
 	},
 ]);
