@@ -6,6 +6,7 @@ import './index.css';
 import LandingPage from './pages/Home/landingPage.jsx';
 import Homepage from './pages/Home/Homepage.jsx';
 import NewClass from './pages/Home/NewClass.jsx';
+import ClassList from './pages/Home/ClassList.jsx';
 import EditProfilePage from './pages/Home/editProfile.jsx';
 
 const router = createBrowserRouter([
@@ -26,9 +27,15 @@ const router = createBrowserRouter([
 				element: <NewClass />,
 			},
 			{
+
+				path: '/classlist',
+				element: <ClassList />,
+			},
+
 				path: '/edit-profile',
 				element: <EditProfilePage />
 			}
+
 		],
 	},
 ]);

@@ -69,7 +69,7 @@ const Overview = () => {
               <img src={student} alt="" className=" h-12 w-12" />
             </div>
 			<Link
-              to="/your-upload-page"
+              to="/classlist"
               className="px-5 py-2 text-xl font-light text-bgColor rounded-xl border-2 border-bgColor"
             >
               View Class List
