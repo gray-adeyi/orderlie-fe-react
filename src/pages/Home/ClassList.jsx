@@ -52,49 +52,49 @@ const ClassList = () => {
 					</h3>
 				</div>
 			</div>
-			<div class='relative overflow-x-auto rounded-lg sm:rounded-xl mx-4 sm:mx-16 mt-5'>
-				<table class='w-full text-sm text-left text-black border border-bgColor rounded-lg'>
-					<thead class='text-lg text-white  bg-bgColor'>
+			<div className='relative overflow-x-auto rounded-lg sm:rounded-xl mx-4 sm:mx-16 mt-5'>
+				<table className='w-full text-sm text-left text-black border border-bgColor rounded-lg'>
+					<thead className='text-lg text-white  bg-bgColor'>
 						<tr>
 							<th
 								scope='col'
-								class='px-6 py-3'></th>
+								className='px-6 py-3'></th>
 							<th
 								scope='col'
-								class='px-6 py-3'>
+								className='px-6 py-3'>
 								Last Name
 							</th>
 							<th
 								scope='col'
-								class='px-6 py-3'>
+								className='px-6 py-3'>
 								First Name
 							</th>
 							<th
 								scope='col'
-								class='px-6 py-3'>
+								className='px-6 py-3'>
 								Middle Name
 							</th>
 							<th
 								scope='col'
-								class='px-6 py-3'>
+								className='px-6 py-3'>
 								Matric No
 							</th>
 							<th
 								scope='col'
-								class='px-6 py-3'></th>
+								className='px-6 py-3'></th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr class='bg-white border-b'>
+						<tr className='bg-white border-b'>
 							<th
 								scope='row'
-								class='px-4 py-4 font-medium text-black whitespace-nowrap  '>
+								className='px-4 py-4 font-medium text-black whitespace-nowrap  '>
 								1.
 							</th>
-							<td class='px-6 py-4'>ADETOYE</td>
-							<td class='px-6 py-4'>GLORY</td>
-							<td class='px-6 py-4'>TOLU</td>
-							<td class='px-6 py-4'>12345678900</td>
+							<td className='px-6 py-4'>ADETOYE</td>
+							<td className='px-6 py-4'>GLORY</td>
+							<td className='px-6 py-4'>TOLU</td>
+							<td className='px-6 py-4'>12345678900</td>
 							<td className='px-6 py-4'>
 								<a
 									href='#'
@@ -104,16 +104,16 @@ const ClassList = () => {
 								</a>
 							</td>
 						</tr>
-						<tr class='bg-white border-b'>
+						<tr className='bg-white border-b'>
 							<th
 								scope='row'
-								class='px-4 py-4 font-medium text-black whitespace-nowrap '>
+								className='px-4 py-4 font-medium text-black whitespace-nowrap '>
 								2.
 							</th>
-							<td class='px-6 py-4'>ADETOYE</td>
-							<td class='px-6 py-4'>GLORY</td>
-							<td class='px-6 py-4'>TOLU</td>
-							<td class='px-6 py-4'>12345678900</td>
+							<td className='px-6 py-4'>ADETOYE</td>
+							<td className='px-6 py-4'>GLORY</td>
+							<td className='px-6 py-4'>TOLU</td>
+							<td className='px-6 py-4'>12345678900</td>
 							<td className='px-6 py-4'>
 								<a
 									href='#'
@@ -123,16 +123,16 @@ const ClassList = () => {
 								</a>
 							</td>
 						</tr>
-						<tr class='bg-white border-b'>
+						<tr className='bg-white border-b'>
 							<th
 								scope='row'
-								class='px-4 py-4 font-medium text-black whitespace-nowrap '>
+								className='px-4 py-4 font-medium text-black whitespace-nowrap '>
 								3.
 							</th>
-							<td class='px-6 py-4'>ADETOYE</td>
-							<td class='px-6 py-4'>GLORY</td>
-							<td class='px-6 py-4'>TOLU</td>
-							<td class='px-6 py-4'>12345678900</td>
+							<td className='px-6 py-4'>ADETOYE</td>
+							<td className='px-6 py-4'>GLORY</td>
+							<td className='px-6 py-4'>TOLU</td>
+							<td className='px-6 py-4'>12345678900</td>
 							<td className='px-6 py-4'>
 								<a
 									href='#'
@@ -142,45 +142,45 @@ const ClassList = () => {
 								</a>
 							</td>
 						</tr>
-						<tr class='bg-white '>
+						<tr className='bg-white '>
 							<th
 								scope='row'
-								class='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
+								className='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
 						</tr>
-						<tr class='bg-white '>
+						<tr className='bg-white '>
 							<th
 								scope='row'
-								class='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
+								className='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
 						</tr>
-						<tr class='bg-white '>
+						<tr className='bg-white '>
 							<th
 								scope='row'
-								class='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
+								className='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
 						</tr>
-						<tr class='bg-white '>
+						<tr className='bg-white '>
 							<th
 								scope='row'
-								class='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
-							<td class='px-6 py-4'></td>
+								className='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
+							<td className='px-6 py-4'></td>
 						</tr>
 						{isDivVisible && (
 							<div className='absolute bottom-4 right-4 bg-white p-4 rounded-lg shadow-lg border border-bgColor'>

@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { authApi } from '../../api/baseUrl';
+
+const initialstate = {
+	firstName: '',
+	lastName: '',
+	middleName: '',
+	MatricNumber: '',
+	email: '',
+	jamb_registration_number: '',
+	admission_mode: ''
+}
 
 const UploadBioData = () => {
 	const [error, setError] = useState('');
 	const [isLoading, setIsLoading] = useState(false);
 	const [successMessage, setSuccessMessage] = useState('');
-	const [bioData, setBioData] = useState({
-		firstName: '',
-		lastName: '',
-		middleName: '',
-		MatricNumber: '',
-	});
+	const [bioData, setBioData] = useState(initialstate);
+
 	const handleInputChange = (e) => {
 		const { name, value } = e.target;
 		setBioData({ ...bioData, [name]: value });
@@ -21,7 +28,8 @@ const UploadBioData = () => {
 			!bioData.firstName ||
 			!bioData.lastName ||
 			!bioData.middleName ||
-			!bioData.MatricNumber
+			!bioData.MatricNumber ||
+			!bioData.email
 		) {
 			setError('Please fill all fields');
 			return;
@@ -32,13 +40,28 @@ const UploadBioData = () => {
 		// Logic to create class using formData
 		setIsLoading(true);
 
-		// Simulating an API call
-		setTimeout(() => {
-			// After successful creation
+		const body = {
+			// get the class id when available
+			class_id: "f33af3f2-75ef-43d9-8d4d-51aff6f6c727",
+			// -----
+			first_name: bioData.firstName,
+			middle_name: bioData.middleName,
+			last_name: bioData.lastName,
+			matriculation_number: bioData.MatricNumber,
+			personal_email_address: bioData.email,
+			jamb_registration_number: bioData.jamb_registration_number,
+			admission_mode: bioData.admission_mode
+		}
+
+		authApi.post('/students', body).then((res) => {
 			setIsLoading(false);
-			setBioData();
-			setSuccessMessage('Class Created Successfully');
-		}, 2000);
+			setBioData(initialstate);
+			setSuccessMessage(res.data.message);
+		}).catch((err) => {
+			setIsLoading(false);
+			setError(err.message);
+		})
+
 	};
 	return (
 		<div className=' container mx-auto my-10 font-serrat'>
@@ -74,7 +97,7 @@ const UploadBioData = () => {
 							<input
 								type='text'
 								name='firstName'
-								value={bioData.fName}
+								value={bioData.firstName}
 								onChange={handleInputChange}
 								className='mt-1 p-2 md:p-4 w-full border rounded-2xl focus:outline-none border-bgColor focus:border-green-500 shadow-lg shadow-gray-400'
 								placeholder='Unique User Name Used To Refer To The Class'
@@ -87,7 +110,7 @@ const UploadBioData = () => {
 							<input
 								type='text'
 								name='lastName'
-								value={bioData.lName}
+								value={bioData.lastName}
 								onChange={handleInputChange}
 								className='mt-1 p-2 md:p-4 w-full border rounded-2xl focus:outline-none border-bgColor focus:border-green-500 shadow-lg shadow-gray-400'
 								placeholder=''
@@ -100,7 +123,7 @@ const UploadBioData = () => {
 							<input
 								type='text'
 								name='middleName'
-								value={bioData.mName}
+								value={bioData.middleName}
 								onChange={handleInputChange}
 								className='mt-1 p-2 md:p-4 w-full border rounded-2xl focus:outline-none border-bgColor focus:border-green-500 shadow-lg shadow-gray-400'
 								placeholder=''
@@ -113,10 +136,49 @@ const UploadBioData = () => {
 							<input
 								type='text'
 								name='MatricNumber'
-								value={bioData.matNo}
+								value={bioData.MatricNumber}
 								onChange={handleInputChange}
 								className='mt-1 p-2 md:p-4 w-full border rounded-2xl focus:outline-none border-bgColor focus:border-green-500 shadow-lg shadow-gray-400'
 								placeholder=''
+							/>
+						</div>
+						<div className='flex flex-col'>
+							<label className=' text-xl md:text-2xl font-semibold'>
+								Email
+							</label>
+							<input
+								type='email'
+								name='email'
+								value={bioData.email}
+								onChange={handleInputChange}
+								className='mt-1 p-2 md:p-4 w-full border rounded-2xl focus:outline-none border-bgColor focus:border-green-500 shadow-lg shadow-gray-400'
+								placeholder='enter unique email...'
+							/>
+						</div>
+						<div className='flex flex-col'>
+							<label className=' text-xl md:text-2xl font-semibold'>
+							Jamb Registration Number
+							</label>
+							<input
+								type='text'
+								name='jamb_registration_number'
+								value={bioData.jamb_registration_number}
+								onChange={handleInputChange}
+								className='mt-1 p-2 md:p-4 w-full border rounded-2xl focus:outline-none border-bgColor focus:border-green-500 shadow-lg shadow-gray-400'
+								placeholder='enter jamb registration number...'
+							/>
+						</div>
+						<div className='flex flex-col'>
+							<label className=' text-xl md:text-2xl font-semibold'>
+							Admission Mode
+							</label>
+							<input
+								type='text'
+								name='admission_mode'
+								value={bioData.admission_mode}
+								onChange={handleInputChange}
+								className='mt-1 p-2 md:p-4 w-full border rounded-2xl focus:outline-none border-bgColor focus:border-green-500 shadow-lg shadow-gray-400'
+								placeholder='enter your mode of admission...'
 							/>
 						</div>
 						<div
