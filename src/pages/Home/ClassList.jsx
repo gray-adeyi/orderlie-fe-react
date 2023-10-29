@@ -1,38 +1,50 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEdit, faTimes } from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEdit, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const ClassList = () => {
-	const [isDivVisible, setIsDivVisible] = useState(false);
+  const [isDivVisible, setIsDivVisible] = useState(false);
 
-	const handleUpdate = () => {
-		// Logic for updating information
-	};
+  const handleUpdate = () => {
+    // Logic for updating information
+  };
 
-	const handleDelete = () => {
-		// Logic for deleting information
-	};
+  const handleDelete = () => {
+    // Logic for deleting information
+    Axios.delete("/api/v1/{class_id}/students/{student_id}")
+      .then((response) => {
+        console.log("Student information deleted:", response.data);
+		
+        // Show an alert popup upon successful deletion
+        window.alert("Student information has been successfully deleted.");
+      })
+      .catch((error) => {
+        console.error("Error deleting student information:", error);
+      });
+  };
 
-	return (
-		<div className='container mx-auto my-10'>
-			<div className='flex justify-center space-x-1 px-3'>
-				<Link to='/upload-bio-data'>
-					<button className='flex rounded-xl text-center border border-sm py-1 px-1 text-bgColor border-bgColor sm:py-2 md:px-5 lg:px-10'>
-						Upload Bio-Data
-					</button>
-				</Link>
-				<Link to='/new-class'>
-					<button className='flex rounded-xl py-2 px-2 sm:px-7 md:px-10 text-white bg-bgColor'>
-						Class List
-					</button>
-				</Link>
-				<Link
-					to='/newclass'
-					className='flex rounded-xl border text-center border-sm py-1 px-1 sm:py-2 md:px-5 lg:px-10 text-bgColor border-bgColor'>
-					Create New Class
-				</Link>
-			</div>
+  return (
+    <div className="container mx-auto my-10">
+      <div className="flex justify-center space-x-1 px-3">
+        <Link to="/upload-bio-data">
+          <button className="flex rounded-xl text-center border border-sm py-1 px-1 text-bgColor border-bgColor sm:py-2 md:px-5 lg:px-10">
+            Upload Bio-Data
+          </button>
+        </Link>
+        <Link to="/new-class">
+          <button className="flex rounded-xl py-2 px-2 sm:px-7 md:px-10 text-white bg-bgColor">
+            Class List
+          </button>
+        </Link>
+        <Link
+          to="/newclass"
+          className="flex rounded-xl border text-center border-sm py-1 px-1 sm:py-2 md:px-5 lg:px-10 text-bgColor border-bgColor"
+        >
+          Create New Class
+        </Link>
+      </div>
 
 			<h3 className='text-sm font-bold mx-4 sm:text-2xl lg:text-2xl lg:mx-16 mt-10'>
 				COMPUTER SCIENCE 200L
@@ -52,49 +64,49 @@ const ClassList = () => {
 					</h3>
 				</div>
 			</div>
-			<div className='relative overflow-x-auto rounded-lg sm:rounded-xl mx-4 sm:mx-16 mt-5'>
-				<table className='w-full text-sm text-left text-black border border-bgColor rounded-lg'>
-					<thead className='text-lg text-white  bg-bgColor'>
+			<div class='relative overflow-x-auto rounded-lg sm:rounded-xl mx-4 sm:mx-16 mt-5'>
+				<table class='w-full text-sm text-left text-black border border-bgColor rounded-lg'>
+					<thead class='text-lg text-white  bg-bgColor'>
 						<tr>
 							<th
 								scope='col'
-								className='px-6 py-3'></th>
+								class='px-6 py-3'></th>
 							<th
 								scope='col'
-								className='px-6 py-3'>
+								class='px-6 py-3'>
 								Last Name
 							</th>
 							<th
 								scope='col'
-								className='px-6 py-3'>
+								class='px-6 py-3'>
 								First Name
 							</th>
 							<th
 								scope='col'
-								className='px-6 py-3'>
+								class='px-6 py-3'>
 								Middle Name
 							</th>
 							<th
 								scope='col'
-								className='px-6 py-3'>
+								class='px-6 py-3'>
 								Matric No
 							</th>
 							<th
 								scope='col'
-								className='px-6 py-3'></th>
+								class='px-6 py-3'></th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr className='bg-white border-b'>
+						<tr class='bg-white border-b'>
 							<th
 								scope='row'
-								className='px-4 py-4 font-medium text-black whitespace-nowrap  '>
+								class='px-4 py-4 font-medium text-black whitespace-nowrap  '>
 								1.
 							</th>
-							<td className='px-6 py-4'>ADETOYE</td>
-							<td className='px-6 py-4'>GLORY</td>
-							<td className='px-6 py-4'>TOLU</td>
-							<td className='px-6 py-4'>12345678900</td>
+							<td class='px-6 py-4'>ADETOYE</td>
+							<td class='px-6 py-4'>GLORY</td>
+							<td class='px-6 py-4'>TOLU</td>
+							<td class='px-6 py-4'>12345678900</td>
 							<td className='px-6 py-4'>
 								<a
 									href='#'
@@ -104,16 +116,16 @@ const ClassList = () => {
 								</a>
 							</td>
 						</tr>
-						<tr className='bg-white border-b'>
+						<tr class='bg-white border-b'>
 							<th
 								scope='row'
-								className='px-4 py-4 font-medium text-black whitespace-nowrap '>
+								class='px-4 py-4 font-medium text-black whitespace-nowrap '>
 								2.
 							</th>
-							<td className='px-6 py-4'>ADETOYE</td>
-							<td className='px-6 py-4'>GLORY</td>
-							<td className='px-6 py-4'>TOLU</td>
-							<td className='px-6 py-4'>12345678900</td>
+							<td class='px-6 py-4'>ADETOYE</td>
+							<td class='px-6 py-4'>GLORY</td>
+							<td class='px-6 py-4'>TOLU</td>
+							<td class='px-6 py-4'>12345678900</td>
 							<td className='px-6 py-4'>
 								<a
 									href='#'
@@ -123,16 +135,16 @@ const ClassList = () => {
 								</a>
 							</td>
 						</tr>
-						<tr className='bg-white border-b'>
+						<tr class='bg-white border-b'>
 							<th
 								scope='row'
-								className='px-4 py-4 font-medium text-black whitespace-nowrap '>
+								class='px-4 py-4 font-medium text-black whitespace-nowrap '>
 								3.
 							</th>
-							<td className='px-6 py-4'>ADETOYE</td>
-							<td className='px-6 py-4'>GLORY</td>
-							<td className='px-6 py-4'>TOLU</td>
-							<td className='px-6 py-4'>12345678900</td>
+							<td class='px-6 py-4'>ADETOYE</td>
+							<td class='px-6 py-4'>GLORY</td>
+							<td class='px-6 py-4'>TOLU</td>
+							<td class='px-6 py-4'>12345678900</td>
 							<td className='px-6 py-4'>
 								<a
 									href='#'
@@ -142,45 +154,45 @@ const ClassList = () => {
 								</a>
 							</td>
 						</tr>
-						<tr className='bg-white '>
+						<tr class='bg-white '>
 							<th
 								scope='row'
-								className='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
+								class='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
 						</tr>
-						<tr className='bg-white '>
+						<tr class='bg-white '>
 							<th
 								scope='row'
-								className='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
+								class='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
 						</tr>
-						<tr className='bg-white '>
+						<tr class='bg-white '>
 							<th
 								scope='row'
-								className='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
+								class='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
 						</tr>
-						<tr className='bg-white '>
+						<tr class='bg-white '>
 							<th
 								scope='row'
-								className='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
-							<td className='px-6 py-4'></td>
+								class='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
 						</tr>
 						{isDivVisible && (
 							<div className='absolute bottom-4 right-4 bg-white p-4 rounded-lg shadow-lg border border-bgColor'>
@@ -194,47 +206,49 @@ const ClassList = () => {
 									/>
 								</div>
 
-								{/* Update Info and Delete Info buttons */}
-								<div className='flex justify-between'>
-									<button
-										className='border border-bgColor text-bgColor px-2 py-1 mr-3 rounded hover:bg-blue-700'
-										onClick={handleUpdate}>
-										Update Info
-									</button>
-									<button
-										className='bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700'
-										onClick={handleDelete}>
-										Delete Info
-									</button>
-								</div>
-							</div>
-						)}
-					</tbody>
-				</table>
-			</div>
-			<div className='mt-5 border border-xl border-bgColor mx-4 lg:mx-32 rounded-lg sm:rounded-xl'>
-				<div>
-					<h3 className='bg-bgColor py-2 px-1 rounded-tl-xl rounded-tr-xl text-center text-white '>
-						DOWNLOAD CLASS DATA
-					</h3>
-				</div>
-				<div className='flex flex-col mx-4 lg:mx-40 mt-4'>
-					<button className='text-xs sm:text-xl rounded-2xl border border-sm py-1 px-2 mt-2 text-white bg-bgColor '>
-						Class Data As xlsx [Excel sheet]
-					</button>
-					<button className='text-xs sm:text-xl rounded-2xl border border-sm py-1 px-2 mt-2 text-white bg-bgColor '>
-						Name merged As xlsx [Excel sheet]
-					</button>
-					<button className='text-xs sm:text-xl rounded-2xl border border-sm py-1 px-2 mt-2 text-white bg-bgColor '>
-						Class Data As docx [Word document]
-					</button>
-					<button className='text-xs sm:text-xl rounded-2xl border border-sm py-1 px-2 mt-2 mb-10 text-white bg-bgColor '>
-						Name merged As docx [Word document]
-					</button>
-				</div>
-			</div>
-		</div>
-	);
+                {/* Update Info and Delete Info buttons */}
+                <div className="flex justify-between">
+                  <button
+                    className="border border-bgColor text-bgColor px-2 py-1 mr-3 rounded hover:bg-blue-700"
+                    onClick={handleUpdate}
+                  >
+                    Update Info
+                  </button>
+                  <button
+                    className="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-700"
+                    onClick={handleDelete}
+                  >
+                    Delete Info
+                  </button>
+                </div>
+              </div>
+            )}
+          </tbody>
+        </table>
+      </div>
+      <div className="mt-5 border border-xl border-bgColor mx-4 lg:mx-32 rounded-lg sm:rounded-xl">
+        <div>
+          <h3 className="bg-bgColor py-2 px-1 rounded-tl-xl rounded-tr-xl text-center text-white ">
+            DOWNLOAD CLASS DATA
+          </h3>
+        </div>
+        <div className="flex flex-col mx-4 lg:mx-40 mt-4">
+          <button className="text-xs sm:text-xl rounded-2xl border border-sm py-1 px-2 mt-2 text-white bg-bgColor ">
+            Class Data As xlsx [Excel sheet]
+          </button>
+          <button className="text-xs sm:text-xl rounded-2xl border border-sm py-1 px-2 mt-2 text-white bg-bgColor ">
+            Name merged As xlsx [Excel sheet]
+          </button>
+          <button className="text-xs sm:text-xl rounded-2xl border border-sm py-1 px-2 mt-2 text-white bg-bgColor ">
+            Class Data As docx [Word document]
+          </button>
+          <button className="text-xs sm:text-xl rounded-2xl border border-sm py-1 px-2 mt-2 mb-10 text-white bg-bgColor ">
+            Name merged As docx [Word document]
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default ClassList;
