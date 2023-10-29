@@ -46,163 +46,165 @@ const ClassList = () => {
         </Link>
       </div>
 
-      <h3 className="text-sm font-bold mx-4 sm:text-2xl lg:text-2xl lg:mx-16 mt-10">
-        COMPUTER SCIENCE 200L
-      </h3>
-      <div className="flex sm:flex-row flex-col justify-between">
-        <div className="flex flex-col  mx-4 lg:mx-16 ">
-          <h3 className="text-sm mt-7 sm:text-2xl lg:text-2xl">
-            CLASS GOVERNOR: ADETOYE GLORY
-          </h3>
-          <h3 className="text-sm mt-1 sm:text-2xl lg:text-2xl">
-            DEPUTY CLASS GOVERNOR: ADETOYE GLORY
-          </h3>
-        </div>
-        <div className="mx-4 lg:mx-16">
-          <h3 className="text-sm sm:mt-7 mt-1 sm:text-2xl lg:text-2xl">
-            MEMBERS COUNT: 3
-          </h3>
-        </div>
-      </div>
-      <div class="relative overflow-x-auto rounded-lg sm:rounded-xl mx-4 sm:mx-16 mt-5">
-        <table class="w-full text-sm text-left text-black border border-bgColor rounded-lg">
-          <thead class="text-lg text-white  bg-bgColor">
-            <tr>
-              <th scope="col" class="px-6 py-3"></th>
-              <th scope="col" class="px-6 py-3">
-                Last Name
-              </th>
-              <th scope="col" class="px-6 py-3">
-                First Name
-              </th>
-              <th scope="col" class="px-6 py-3">
-                Middle Name
-              </th>
-              <th scope="col" class="px-6 py-3">
-                Matric No
-              </th>
-              <th scope="col" class="px-6 py-3"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="bg-white border-b">
-              <th
-                scope="row"
-                class="px-4 py-4 font-medium text-black whitespace-nowrap  "
-              >
-                1.
-              </th>
-              <td class="px-6 py-4">ADETOYE</td>
-              <td class="px-6 py-4">GLORY</td>
-              <td class="px-6 py-4">TOLU</td>
-              <td class="px-6 py-4">12345678900</td>
-              <td className="px-6 py-4">
-                <a
-                  href="#"
-                  className="font-extrabold text-blue-600 dark:text-blue-500 hover:underline"
-                  onClick={() => setIsDivVisible(true)}
-                >
-                  <FontAwesomeIcon icon={faEdit} />
-                </a>
-              </td>
-            </tr>
-            <tr class="bg-white border-b">
-              <th
-                scope="row"
-                class="px-4 py-4 font-medium text-black whitespace-nowrap "
-              >
-                2.
-              </th>
-              <td class="px-6 py-4">ADETOYE</td>
-              <td class="px-6 py-4">GLORY</td>
-              <td class="px-6 py-4">TOLU</td>
-              <td class="px-6 py-4">12345678900</td>
-              <td className="px-6 py-4">
-                <a
-                  href="#"
-                  className="font-extrabold text-blue-600 dark:text-blue-500 hover:underline"
-                  onClick={() => setIsDivVisible(true)}
-                >
-                  <FontAwesomeIcon icon={faEdit} />
-                </a>
-              </td>
-            </tr>
-            <tr class="bg-white border-b">
-              <th
-                scope="row"
-                class="px-4 py-4 font-medium text-black whitespace-nowrap "
-              >
-                3.
-              </th>
-              <td class="px-6 py-4">ADETOYE</td>
-              <td class="px-6 py-4">GLORY</td>
-              <td class="px-6 py-4">TOLU</td>
-              <td class="px-6 py-4">12345678900</td>
-              <td className="px-6 py-4">
-                <a
-                  href="#"
-                  className="font-extrabold text-blue-600 dark:text-blue-500 hover:underline"
-                  onClick={() => setIsDivVisible(true)}
-                >
-                  <FontAwesomeIcon icon={faEdit} />
-                </a>
-              </td>
-            </tr>
-            <tr class="bg-white ">
-              <th
-                scope="row"
-                class="px-4 py-4 font-medium text-black whitespace-nowrap "
-              ></th>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-            </tr>
-            <tr class="bg-white ">
-              <th
-                scope="row"
-                class="px-4 py-4 font-medium text-black whitespace-nowrap "
-              ></th>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-            </tr>
-            <tr class="bg-white ">
-              <th
-                scope="row"
-                class="px-4 py-4 font-medium text-black whitespace-nowrap "
-              ></th>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-            </tr>
-            <tr class="bg-white ">
-              <th
-                scope="row"
-                class="px-4 py-4 font-medium text-black whitespace-nowrap "
-              ></th>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-              <td class="px-6 py-4"></td>
-            </tr>
-            {isDivVisible && (
-              <div className="absolute bottom-4 right-4 bg-white p-4 rounded-lg shadow-lg border border-bgColor">
-                {/* Edit and Cancel icons */}
-                <div className="flex justify-between mb-4 border-b border-bgColor">
-                  <h3 className="text-xl font-semibold">Edit</h3>
-                  <FontAwesomeIcon
-                    icon={faTimes}
-                    className="cursor-pointer"
-                    onClick={() => setIsDivVisible(false)}
-                  />
-                </div>
+			<h3 className='text-sm font-bold mx-4 sm:text-2xl lg:text-2xl lg:mx-16 mt-10'>
+				COMPUTER SCIENCE 200L
+			</h3>
+			<div className='flex sm:flex-row flex-col justify-between'>
+				<div className='flex flex-col  mx-4 lg:mx-16 '>
+					<h3 className='text-sm mt-7 sm:text-2xl lg:text-2xl'>
+						CLASS GOVERNOR: ADETOYE GLORY
+					</h3>
+					<h3 className='text-sm mt-1 sm:text-2xl lg:text-2xl'>
+						DEPUTY CLASS GOVERNOR: ADETOYE GLORY
+					</h3>
+				</div>
+				<div className='mx-4 lg:mx-16'>
+					<h3 className='text-sm sm:mt-7 mt-1 sm:text-2xl lg:text-2xl'>
+						MEMBERS COUNT: 3
+					</h3>
+				</div>
+			</div>
+			<div class='relative overflow-x-auto rounded-lg sm:rounded-xl mx-4 sm:mx-16 mt-5'>
+				<table class='w-full text-sm text-left text-black border border-bgColor rounded-lg'>
+					<thead class='text-lg text-white  bg-bgColor'>
+						<tr>
+							<th
+								scope='col'
+								class='px-6 py-3'></th>
+							<th
+								scope='col'
+								class='px-6 py-3'>
+								Last Name
+							</th>
+							<th
+								scope='col'
+								class='px-6 py-3'>
+								First Name
+							</th>
+							<th
+								scope='col'
+								class='px-6 py-3'>
+								Middle Name
+							</th>
+							<th
+								scope='col'
+								class='px-6 py-3'>
+								Matric No
+							</th>
+							<th
+								scope='col'
+								class='px-6 py-3'></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class='bg-white border-b'>
+							<th
+								scope='row'
+								class='px-4 py-4 font-medium text-black whitespace-nowrap  '>
+								1.
+							</th>
+							<td class='px-6 py-4'>ADETOYE</td>
+							<td class='px-6 py-4'>GLORY</td>
+							<td class='px-6 py-4'>TOLU</td>
+							<td class='px-6 py-4'>12345678900</td>
+							<td className='px-6 py-4'>
+								<a
+									href='#'
+									className='font-extrabold text-blue-600 dark:text-blue-500 hover:underline'
+									onClick={() => setIsDivVisible(true)}>
+									<FontAwesomeIcon icon={faEdit} />
+								</a>
+							</td>
+						</tr>
+						<tr class='bg-white border-b'>
+							<th
+								scope='row'
+								class='px-4 py-4 font-medium text-black whitespace-nowrap '>
+								2.
+							</th>
+							<td class='px-6 py-4'>ADETOYE</td>
+							<td class='px-6 py-4'>GLORY</td>
+							<td class='px-6 py-4'>TOLU</td>
+							<td class='px-6 py-4'>12345678900</td>
+							<td className='px-6 py-4'>
+								<a
+									href='#'
+									className='font-extrabold text-blue-600 dark:text-blue-500 hover:underline'
+									onClick={() => setIsDivVisible(true)}>
+									<FontAwesomeIcon icon={faEdit} />
+								</a>
+							</td>
+						</tr>
+						<tr class='bg-white border-b'>
+							<th
+								scope='row'
+								class='px-4 py-4 font-medium text-black whitespace-nowrap '>
+								3.
+							</th>
+							<td class='px-6 py-4'>ADETOYE</td>
+							<td class='px-6 py-4'>GLORY</td>
+							<td class='px-6 py-4'>TOLU</td>
+							<td class='px-6 py-4'>12345678900</td>
+							<td className='px-6 py-4'>
+								<a
+									href='#'
+									className='font-extrabold text-blue-600 dark:text-blue-500 hover:underline'
+									onClick={() => setIsDivVisible(true)}>
+									<FontAwesomeIcon icon={faEdit} />
+								</a>
+							</td>
+						</tr>
+						<tr class='bg-white '>
+							<th
+								scope='row'
+								class='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+						</tr>
+						<tr class='bg-white '>
+							<th
+								scope='row'
+								class='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+						</tr>
+						<tr class='bg-white '>
+							<th
+								scope='row'
+								class='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+						</tr>
+						<tr class='bg-white '>
+							<th
+								scope='row'
+								class='px-4 py-4 font-medium text-black whitespace-nowrap '></th>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+							<td class='px-6 py-4'></td>
+						</tr>
+						{isDivVisible && (
+							<div className='absolute bottom-4 right-4 bg-white p-4 rounded-lg shadow-lg border border-bgColor'>
+								{/* Edit and Cancel icons */}
+								<div className='flex justify-between mb-4 border-b border-bgColor'>
+									<h3 className='text-xl font-semibold'>Edit</h3>
+									<FontAwesomeIcon
+										icon={faTimes}
+										className='cursor-pointer'
+										onClick={() => setIsDivVisible(false)}
+									/>
+								</div>
 
                 {/* Update Info and Delete Info buttons */}
                 <div className="flex justify-between">
