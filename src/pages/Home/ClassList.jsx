@@ -16,7 +16,7 @@ const ClassList = () => {
     Axios.delete("/api/v1/{class_id}/students/{student_id}")
       .then((response) => {
         console.log("Student information deleted:", response.data);
-
+		
         // Show an alert popup upon successful deletion
         window.alert("Student information has been successfully deleted.");
       })
