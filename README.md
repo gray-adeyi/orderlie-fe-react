@@ -39,6 +39,9 @@ We welcome contributions from everyone. Before contributing, please read our [co
 ## UI Design for Home Page Screen (Desktop Version) [Figma Link](https://www.figma.com/file/BZfwIjXSx7DJUkjEO6Q2O0/Ordelie?type=design&node-id=156-24&mode=design&t=v8eNYj12W5Mhw86u-4)
 
 ## Graphic Design for Hacktoberfest Day 16 [Figma Link](https://www.figma.com/file/w1Hoj9ESFonR8tDl5WLedU/Event-Management?type=design&node-id=410-2&mode=design&t=bu9hgnQ9horONEgc-4)
+
+## Graphic Design for Hacktoberfest Day 17 [Figma Link](https://www.figma.com/file/w1Hoj9ESFonR8tDl5WLedU/Event-Management?type=design&node-id=410-324&mode=design&t=sEVBXpCFhQF5x81V-4)
+
 ## License
 ****
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
