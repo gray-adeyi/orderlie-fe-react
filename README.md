@@ -43,6 +43,8 @@ We welcome contributions from everyone. Before contributing, please read our [co
 ## Graphic Design for Hacktoberfest Day 17 [Figma Link](https://www.figma.com/file/w1Hoj9ESFonR8tDl5WLedU/Event-Management?type=design&node-id=410-324&mode=design&t=sEVBXpCFhQF5x81V-4)
 
 ## Graphic Design for Hacktoberfest Day 18 [Figma Link](https://www.figma.com/file/w1Hoj9ESFonR8tDl5WLedU/Event-Management?type=design&node-id=410-762&mode=design&t=fNEEzAPqjS77a5mF-4)
+
+## Graphic Design for Hacktoberfest Day 19 [Figma Link](https://www.figma.com/file/w1Hoj9ESFonR8tDl5WLedU/Event-Management?type=design&node-id=410-1204&mode=design&t=fNEEzAPqjS77a5mF-4)
 ## License
 ****
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
